@@ -6,21 +6,13 @@
     this.tree = document.querySelectorAll(query)
   }
 
-  Appender.prototype.append = function () {
-
-  }
-
-  Appender.prototype.percentage = function (num) {
-    if (typeof num === 'number') this.percentage = num
-  }
-
   Appender.prototype.append = function (data) {
     var index, node, tree = this.tree
     if (tree) {
       index = Math.round(tree.length / 100 * this.percentage)
       node = tree[index]
-      if (tree) {
-        tree.insertBefore(createElement(data), node.firstChild)
+      if (node) {
+        node.parentNode.insertBefore(createElement(data), node)
       }
     }
   }

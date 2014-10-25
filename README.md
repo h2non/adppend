@@ -27,9 +27,9 @@ Or loading the script remotely
 - Opera >= 10
 - IE >= 9
 
-### Setup
+### Usage
 
-Load the module as dependency of your application
+Append a `video` between `p` elements present in DOM
 ```js
 adppend('p').append('<video src="/ad.ogg"></video>')
 ```
