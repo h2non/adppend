@@ -1,6 +1,6 @@
 # addpend [![Build Status](https://api.travis-ci.org/h2non/adppend.svg?branch=master)][travis] [![Code Climate](https://codeclimate.com/github/h2non/adppend/badges/gpa.svg)](https://codeclimate.com/github/h2non/adppend)
 
-Append content dinamically between DOM nodes easily
+Append content dinamically between DOM nodes easily, specially implemented for Web advertisement proposals
 
 ## Installation
 
@@ -31,7 +31,7 @@ Or loading the script remotely
 
 Load the module as dependency of your application
 ```js
-var app = angular.module('app', ['ngResilient'])
+adppend('p').append('<video src="/ad.ogg"></video>')
 ```
 
 ## API
