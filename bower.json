@@ -1,0 +1,32 @@
+{
+  "name": "adppend",
+  "description": "Append content dinamically between DOM nodes easily",
+  "version": "0.1.1",
+  "license": "MIT",
+  "author": "Tomas Aparicio",
+  "repository": "h2non/adppend",
+  "main": "./adppend.js",
+  "keywords": [
+    "ads",
+    "append",
+    "dom",
+    "intersect",
+    "video"
+  ],
+  "ignore": [
+    "**/.*",
+    ".*",
+    "*.md",
+    "src",
+    "lib",
+    "test",
+    "Makefile",
+    ".editorconfig",
+    ".gitignore",
+    ".travis.yml",
+    ".npmignore",
+    "package.json",
+    "component.json",
+    "examples"
+  ]
+}
