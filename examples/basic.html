@@ -2,9 +2,12 @@
 <head>
   <script src="../adppend.js"></script>
   <script>
+  function addAdvertisement() {
+    adppend('p').append('Awesome advertisement video')
+  }
   document.onreadystatechange = function () {
     if (document.readyState === 'complete') {
-      adppend('p').append('Awesome advertisement video')
+      addAdvertisement()
     }
   }
   </script>
