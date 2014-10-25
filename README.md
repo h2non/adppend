@@ -1,4 +1,4 @@
-# addpend [![Build Status](https://api.travis-ci.org/h2non/adppend.svg?branch=master)][travis] [![Code Climate](https://codeclimate.com/github/h2non/adppend/badges/gpa.svg)](https://codeclimate.com/github/h2non/adppend)
+# adppend [![Build Status](https://api.travis-ci.org/h2non/adppend.svg?branch=master)][travis] [![Code Climate](https://codeclimate.com/github/h2non/adppend/badges/gpa.svg)](https://codeclimate.com/github/h2non/adppend)
 
 Append content dinamically between DOM nodes easily, specially implemented for Web advertisement proposals
 
