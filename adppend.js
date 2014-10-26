@@ -58,7 +58,7 @@
     if (typeof data === 'string') {
       node = document.createElement('div')
       node.innerHTML = data
-    } else if (data && /Element/.test(Object.prototype.toString.call(data))) {
+    } else if (data && /Element/.test(toStr.call(data))) {
       node = data
     }
     return node
