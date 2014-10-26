@@ -77,6 +77,10 @@ adppend('#content > ul')
   .append('<img src="ad.gif" />')
 ```
 
+### adppend.VERSION
+
+Current library semantic version
+
 ## Contributing
 
 Wanna help? Cool! It will be appreciated :)
