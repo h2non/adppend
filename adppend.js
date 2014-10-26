@@ -1,4 +1,4 @@
-/* addpend v.0.1 - MIT license - https://github.com/h2non/adppend */
+/* adppend v.0.1 - MIT license - https://github.com/h2non/adppend */
 (function (global, document) {
   var toStr = Object.prototype.toString
   var slice = Array.prototype.slice
