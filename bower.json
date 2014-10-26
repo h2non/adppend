@@ -1,6 +1,6 @@
 {
   "name": "adppend",
-  "description": "Append content dinamically between DOM nodes easily",
+  "description": "Append content dinamically between DOM nodes easily, useful for Web advertisement purposes",
   "version": "0.1.1",
   "license": "MIT",
   "author": "Tomas Aparicio",
@@ -11,7 +11,8 @@
     "append",
     "dom",
     "intersect",
-    "video"
+    "video",
+    "advertisement"
   ],
   "ignore": [
     "**/.*",
