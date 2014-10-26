@@ -2,8 +2,11 @@
 <head>
   <script src="../adppend.js"></script>
   <script>
+  var adURL = 'http://www.susanscovill.com/wp-content/uploads/2009/09/sample-ad-300.jpg'
+
   function addAdvertisement() {
-    adppend('p').append('Awesome advertisement video')
+    adppend('li').append('<img src="' + adURL + '" />')
+    adppend('#child').appendChild('<img src="' + adURL + '" />')
   }
 
   document.onreadystatechange = function () {
@@ -14,11 +17,32 @@
   </script>
 </head>
 <body>
+  <h1>Example</h1>
   <div id="sample">
-    <p>Hello</p>
-    <p>World</p>
-    <p>HTML</p>
-    <p>JavaScript</p>
+    <ul>
+      <li>Hello</li>
+      <li>World</li>
+      <li>HTML</li>
+      <li>JavaScript</li>
+    </ul>
+  </div>
+
+  <h1>Example nested child nodes</h1>
+  <div id="child">
+    <div id="section1">
+      <h2>Section 1</h2>
+      <p>Hello</p>
+      <p>World</p>
+      <p>HTML</p>
+      <p>JavaScript</p>
+    </div>
+    <div id="section2">
+      <h2>Section 2</h2>
+      <p>Hello</p>
+      <p>World</p>
+      <p>HTML</p>
+      <p>JavaScript</p>
+    </div>
   </div>
 </body>
 </html>

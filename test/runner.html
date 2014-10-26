@@ -16,8 +16,12 @@
     <script src="../adppend.js"></script>
     <script src="adppend.js"></script>
     <script>
-      if (window.mochaPhantomJS) mochaPhantomJS.run()
-      else mocha.run()
+      document.onreadystatechange = function () {
+        if (document.readyState === 'complete') {
+          if (window.mochaPhantomJS) mochaPhantomJS.run()
+          else mocha.run()
+        }
+      }
     </script>
   </body>
 </html>
