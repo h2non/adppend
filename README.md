@@ -2,6 +2,10 @@
 
 Append content dinamically between DOM nodes easily, specially implemented for Web advertisement purposes
 
+As features, it is really tiny (>100 SLOC) and it has no coupling to third-party libraries, such as jQuery, Zepto... it's only pure JavaScript with native DOM API consumption
+
+For usage details, see [examples](https://github.com/h2non/adppend/tree/master/examples)
+
 ## Installation
 
 Via [Bower](http://bower.io)
@@ -16,7 +20,7 @@ component install h2non/adppend
 
 Or loading the script remotely
 ```html
-<script src="//cdn.rawgit.com/h2non/adppend/0.1.0/adppend.js"></script>
+<script src="//cdn.rawgit.com/h2non/adppend/0.1.1/adppend.js"></script>
 ```
 
 ### Environments
@@ -29,14 +33,49 @@ Or loading the script remotely
 
 ### Usage
 
-Append a `video` between `p` elements present in DOM
+Append a `video` element between `p` elements already present in DOM
 ```js
 adppend('p').append('<video src="/ad.ogg"></video>')
 ```
 
 ## API
 
-### adppend()
+### adppend(querySelector)
+
+Create a new adppend instance attached to a custom DOM elements.
+`querySelector` argument must be a valid [CSS selector](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors) expression query
+
+```js
+adppend('#content > ul')
+```
+
+#### adppend#append(htmlString|Node)
+
+Intersect a custom raw HTML code or DOM Node Element between the selected nodes
+
+```js
+adppend('#content > ul')
+  .append('<video src="ad.ogg"></video>')
+```
+
+#### adppend#appendChild(htmlString|Node)
+
+Intersect a custom raw HTML code or DOM Node Element between the child selected nodes
+
+```js
+adppend('#content')
+  .appendChild('<video src="ad.ogg"></video>')
+```
+
+#### adppend#percentage(num)
+
+Define the intersection percentage to append content between selected nodes. Defaul to `60`
+
+```js
+adppend('#content > ul')
+  .percentage(25)
+  .append('<img src="ad.gif" />')
+```
 
 ## Contributing
 
