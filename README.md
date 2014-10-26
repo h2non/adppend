@@ -4,7 +4,7 @@ Append content dinamically between DOM nodes easily, specially implemented for W
 
 As features, it is really tiny (>100 SLOC) and it has no coupling to third-party libraries, such as jQuery, Zepto... it's only pure JavaScript with native DOM API consumption
 
-For usage details, see [examples](https://github.com/h2non/adppend/tree/master/examples)
+For usage details, see the [examples](https://github.com/h2non/adppend/tree/master/examples) and [API](#api) documentation
 
 ## Installation
 
